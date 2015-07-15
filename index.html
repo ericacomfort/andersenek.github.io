@@ -1,108 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Erica Andersen</title>
-<link href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
-<link href="css/css.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Concentration</title>
+  <link rel="stylesheet" href="css/game.css">
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 </head>
+<body>
+  <button id="magic"></button>
+  <div class="container">
 
-<body class="about">
+  <h1>How well can you concentrate?</h1>
 
-<!--Navigations and Mobile Navigation-->
-<div class="mobileNavWrapper">
-	<ul class="nav">
-    <li class="icon"><a id="backsvg" href="#">
-			<svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="40px" viewBox="0 0 70 40" enable-background="new 0 0 70 40" xml:space="preserve">
-        <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="13.1" x2="39.3" y2="13.1"/>
-        <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="25.1" x2="39.3" y2="25.1"/>
-        <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="37.1" x2="39.3" y2="37.1"/>
-			</svg></a></li>
-		<li><a class="scroll" href="#" data-target="A">Home</a></li>
-		<li><a class="scroll" href="#" data-target="B">Passion</a></li>
-		<li><a class="scroll" href="#" data-target="C">Journey</a></li>
-		<li><a class="scroll" href="#" data-target="D">Contact</a></li>
-	</ul>
-</div> <!--End Navigation-->
+  <ul class="game-options">
+    <li><p id="match-list">Matches: 0 </p></li>
+    <li><button id="new-game">New Game</button></li>
+  </ul>
 
-<div class="header-wrapper" id="headerWrapper">
-	<div class="header">
+    <ul id="memory-grid">
+      <li class="card" data-card="one"><span class="image"><img src="images/one.gif" alt="MM1"></span></li>
+      <li class="card" data-card="two"><span class="image"><img src="images/two.gif" alt="MM2"></span></li>
+      <li class="card" data-card="three"><span class="image"><img src="images/three.gif" alt="MM3"></span></li>
+      <li class="card" data-card="four"><span class="image"><img src="images/four.gif" alt="MM4"></span></li>
+      <li class="card" data-card="five"><span class="image"><img src="images/five.gif" alt="MM5"></span></li>
+      <li class="card" data-card="six"><span class="image"><img src="images/six.gif" alt="MM6"></span></li>
+      <li class="card" data-card="seven"><span class="image"><img src="images/seven.gif" alt="MM7"></span></li>
+      <li class="card" data-card="eight"><span class="image"><img src="images/eight.gif" alt="MM8"></span></li>
+      <li class="card" data-card="one"><span class="image"><img src="images/one.gif" alt="MM1"></span></li>
+      <li class="card" data-card="two"><span class="image"><img src="images/two.gif" alt="MM2"></span></li>
+      <li class="card" data-card="three"><span class="image"><img src="images/three.gif" alt="MM3"></span></li>
+      <li class="card" data-card="four"><span class="image"><img src="images/four.gif" alt="MM4"></span></li>
+      <li class="card" data-card="five"><span class="image"><img src="images/five.gif" alt="MM5"></span></li>
+      <li class="card" data-card="six"><span class="image"><img src="images/six.gif" alt="MM6"></span></li>
+      <li class="card" data-card="seven"><span class="image"><img src="images/seven.gif" alt="MM7"></span></li>
+      <li class="card" data-card="eight"><span class="image"><img src="images/eight.gif" alt="MM8"></span></li>
+    </ul>
+  </div>  <!-- End Container  -->
 
-		<a href="/" class="logo"><img src="images/erica-logo.png" alt="Erica Andersen"></a>
-		<ul class="nav">
-			<li><a class="scroll" href="#" data-target="A">Home</a></li>
-			<li><a class="scroll" href="#" data-target="B">Passion</a></li>
-			<li><a class="scroll" href="#" data-target="C">Journey</a></li>
-			<li><a class="scroll" href="#" data-target="D">Contact</a></li>
-		</ul>
 
-		<div id="menubuttonsvg">
-			<svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="40px" viewBox="0 0 70 40" enable-background="new 0 0 70 40" xml:space="preserve">
-				<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="13.1" x2="39.3" y2="13.1"/>
-				<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="25.1" x2="39.3" y2="25.1"/>
-				<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="37.1" x2="39.3" y2="37.1"/>
-			</svg>
-		</div>
-
-	</div> <!--End Header-->
-</div> <!--End Header Wrapper-->
-
-<!--Content Container-->
-<div class="container">
-
-	<div class="hero" id="A">
-		<div class="content post">
-			<h2>Hey there, I'm Erica.</h2>
-			<p>I was born and raised in a D.C. suburb with an enormous curiosity for anything and everything. Aside from the people in my life, I cannot live without my planner, the September issue of Vogue and a smile. It’s how I live my life day to day but more importantly, what I can bring to you. It’s nice to meet you.</p>
-		</div><!--End Section 1 Content-->
-	</div>
-
-  <div class="sec2" id="B">
-		<div class="content post">
-			<h2>"The longer I live, the more beautiful life becomes."</h2>
-            <h3>- Frank Lloyd Wright</h3>
-			<p>As a true optimist, I often see the beauty in everything. Even in the things that tend to be overlooked. In the behind the scenes. In the angle here, the kern there, the fleeting animation. Photography, Design, Development. My <em>passions</em>. The elements that push me to pursue a more beautiful life.</p>
-		</div><!--End Section 2 Content-->
-	</div>
-
-  <div class="sec3" id="C">
-		<div class="content post">
-			<h2>The endless journey.</h2>
-			<p>It's been said that 'life is short but sweet for certain'. So why waste precious moments doing things that we don't love? I'm not sure if I'll ever know what my 'purpose' is or what I 'should be doing'. But I do know that every step I take in life (backed by a lot of love) guides me toward something greater than before. Did I know taking "Design For The Web I" (for fun) would change my career? Did I know I would find this oceanside gem when I decided to book a flight to California (three hours before it was set to depart)? Certainly not, but I guess that's why they say life is sweet for certain. At least it is on my <em>endless journey</em>.</p>
-		</div><!--End Section 3 Content-->
-	</div>
-
-  <div class="sec4" id="D">
-    <div class="content post">
-			<h2>Do you have any questions for me?</h2>
-			<p>Don't be shy! Feel free to contact me by clicking the button below or by reaching out to me via social media.</p>
-             <!-- CONTACT BUTTON -->
-    	<button id="contact"><a href="mailto:andersenek@gmail.com?Subject=Hello%20Erica">Say Hello</a></button>
-
-      <div class="social">
-        <a href="http://www.facebook.com/eandersen.designs" target="_blank" onmouseover="document.iconfb.src='images/social-blue-fb.png';" onmouseout="document.iconfb.src='images/social-fb.png';"><img src="images/social-fb.png" name="iconfb" alt="Facebook" scale="0"></a>
-				<a href="http://twitter.com/prettyinlilly" target="_blank" onmouseover="document.icontwit.src='images/social-blue-twitter.png';" onmouseout="document.icontwit.src='images/social-twitter.png';"><img src="images/social-twitter.png" name="icontwit" alt="Twitter" scale="0"></a>
-				<a href="http://instagram.com/andersenek/" target="_blank" onmouseover="document.iconinsta.src='images/social-blue-insta.png';" onmouseout="document.iconinsta.src='images/social-insta.png';"><img src="images/social-insta.png" name="iconinsta" alt="Instagram" scale="0"></a>
-			</div><!--End Social Media-->
-
-		</div><!--End Section 4 Content-->
-  </div><!--End Section 4-->
-
-</div> <!--End Container-->
-
-<script type="text/javascript" src="js/viewport.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-	jQuery('.post').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	    offset: 200
-	   });
-});
-</script>
-
-</body> <!--End Body Content-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
 </html>
